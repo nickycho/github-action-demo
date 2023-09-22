@@ -4,7 +4,8 @@
   "description": "This is a simple demo repository to showcase how to use GitHub Actions for automating your workflow.",
   "main": "index.js",
   "scripts": {
-    "build": "node index.js"
+    "build": "node index.js",
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
