@@ -1,0 +1,20 @@
+{
+  "name": "github-action-demo",
+  "version": "1.0.0",
+  "description": "This is a simple demo repository to showcase how to use GitHub Actions for automating your workflow.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickycho/github-action-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickycho/github-action-demo/issues"
+  },
+  "homepage": "https://github.com/nickycho/github-action-demo#readme"
+}
