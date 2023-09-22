@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file Dockerfile --tag my-image-name:latest
 
   upload:
     needs: build
@@ -25,6 +25,6 @@ jobs:
     - name: Upload an image
       uses: ishworkh/container-image-artifact-upload@v1.0.0
       with:
-        image: "my-image-name:$(date +%s)"
+        image: "my-image-name:latest"
         retention_days: "2"
   
