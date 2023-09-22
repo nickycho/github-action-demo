@@ -16,3 +16,15 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
+  upload:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Upload an image
+      uses: ishworkh/container-image-artifact-upload@v1.0.0
+      with:
+        image: "my-image-name:$(date +%s)"
+        retention_days: "2"
+  
